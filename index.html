@@ -3,19 +3,127 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>HTML Form</title>
   </head>
   <body>
+    <h1>GeeksforGeeks</h1>
     <form>
-      <label for="name">Name:</label><br />
-      <input type="text" id="name" name="name" /><br />
-      <label for="email">Email:</label><br />
-      <input type="text" id="email" name="email" />
-      <label for="age">Age:</label><br />
-      <input type="text" id="age" name="age" />
+      <section id="question1">
+        <p>
+          <label for="name">Name:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          /><br />
+        </p>
+        <p>
+          <label for="email">Email:</label><br />
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          /><br />
+        </p>
+        <p>
+          <label for="age">Age:</label><br />
+          <input
+            type="text"
+            id="age"
+            name="age"
+            placeholder="Enter your age"
+          /><br />
+        </p>
+      </section>
 
-      <label for="option">Which option best describes you? :</label><br />
+      <section id="question2">
+        <p>
+          <label for="options"> Which option best describes you? :</label><br />
+          <select name="options" id="options">
+            <option value="student">Student</option>
+            <option value="employed">Employed</option>
+            <option value="unemployed">Unemployed</option></select><br />
+        </p>
+      </section>
+
+      <section id="question3">
+        <p>
+          Would you recommend GeeksforGeeks to a friend?<br />
+          <input type="radio" id="html" name="recommend" value="yes" />
+          <label for="yes">Yes</label><br />
+          <input type="radio" id="no" name="recommend" value="no" />
+          <label for="no">No</label><br />
+          <input type="radio" id="maybe" name="recommend" value="maybe" />
+          <label for="javascript">Maybe</label>
+        </p>
+      </section>
+
+      <section id="question4">
+        <p>
+          Languages and Frameworks known <small>(Check all that apply)</small
+          ><br />
+          <input type="checkbox" id="language1" name="language1" value="c" />
+          <label for="language1"> C</label><br />
+
+          <input type="checkbox" id="language2" name="language2" value="c++" />
+          <label for="language2"> C++</label><br />
+
+          <input type="checkbox" id="language3" name="language3" value="c#" />
+          <label for="language3"> C#</label><br />
+
+          <input
+            type="checkbox"
+            id="language4"
+            name="language4"
+            value="python"
+          />
+          <label for="language4"> Python</label><br />
+
+          <input type="checkbox" id="language5" name="language5" value="Java" />
+          <label for="language5"> Java</label><br />
+
+          <input type="checkbox" id="language6" name="language6" value="js" />
+          <label for="language6"> JavaScript</label><br />
+
+          <input
+            type="checkbox"
+            id="language7"
+            name="language7"
+            value="react"
+          />
+          <label for="language7"> React</label><br />
+
+          <input
+            type="checkbox"
+            id="language8"
+            name="language8"
+            value="angular"
+          />
+          <label for="language8"> Angular</label><br />
+
+          <input
+            type="checkbox"
+            id="language9"
+            name="language9"
+            value="spring"
+          />
+          <label for="language9"> Spring</label><br />
+        </p>
+      </section>
+
+      <section id="suggestions">
+        <p>
+          Any comments or suggestions:<br />
+          <br /><textarea rows="5" cols="60"></textarea>
+        </p>
+      </section>
+
+      <section id="submit">
+        <input type="submit" value="Submit" />
+      </section>
     </form>
   </body>
 </html>
